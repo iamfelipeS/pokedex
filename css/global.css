@@ -1,17 +1,10 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    /* considera a borda como tamanho total */
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #F6F8FC;
-}
-
-h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+    background-color: #f6f8fc;
 }
 
 .content {
@@ -25,7 +18,7 @@ h1 {
     .content {
         max-width: 992px;
         height: auto;
-        margin: 1rem;
+        margin: 1rem auto;
         border-radius: 1rem;
     }
 }
