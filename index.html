@@ -13,12 +13,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/pokedex.css">
+    <link rel="stylesheet" href="./loader/loader.css">
     <title>Pokedex</title>
 </head>
 
 <body>
-    <div id="loader" class="loader"></div>
-    <section class="content">
+    <section class="content hidden">
+        <div id="loader" class="loader visible">
+            <div class="overlay"></div>
+            <img id="loading-image" src="/assets/pokeball.svg" alt="Loading..." />
+        </div>    
 
         <h1>Pokedex</h1>
 
@@ -38,7 +42,7 @@
 
         </ol>
         <div class="pagination">
-            <button id="loadMoreButton" type="button">Carregar mais</button>
+            <button id="loadMoreButton" hidden type="button">Carregar mais</button>
         </div>
     </section>
 </body>
