@@ -1,0 +1,23 @@
+.loader {
+    border: 4px solid red;  /* Temporário para verificação */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    position: fixed;  /* Alterado para fixed para garantir que esteja na tela */
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    display: none;  /* Inicialmente oculto */
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.visible {
+    display: block !important;  /* Torna visível ao adicionar a classe .visible */
+}

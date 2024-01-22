@@ -25,8 +25,9 @@ function loadPokemonItens(offset, limit) {
 }
 
 loadPokemonItens(offset, limit)
-
 loadMoreButton.addEventListener('click', () => {
+    const loader = document.getElementById("loader");
+    loader.classList.add("visible"); 
     offset += limit
     const qtdRecordNextPage = offset + limit
 
@@ -39,4 +40,4 @@ loadMoreButton.addEventListener('click', () => {
     } else {
         loadPokemonItens(offset, limit)
     }
-})
+});
